@@ -50,3 +50,34 @@ header{
     background-color: $nav-color;
     border-bottom: 4px solid $primary-color;
 }
+
+nav{
+    color: $text-color;
+    height: 4em;
+    padding: 1em;
+
+    @include flex($justify:space-between);
+
+        img{
+            width: 70px;
+        }
+
+        ul{
+            @include flex($justify: space-between);
+            list-style-type: none;
+        }
+
+        a{
+            color: $text-color;
+            padding: $padding;
+            margin: $padding;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: $primary-color;
+
+        }
+}
