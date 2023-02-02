@@ -14,4 +14,24 @@ body p {
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: 600;
   color: #484848;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+header {
+  grid-column: 1/6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 4px solid #3a8479;
 }/*# sourceMappingURL=style.css.map */
